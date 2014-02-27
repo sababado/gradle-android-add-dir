@@ -10,7 +10,7 @@ Apply the script at the top of your build.gradle file. Make sure to define the t
 
 | Property | Description |
 |:---------|:------------|
-| `project.ext['src.java.dir']` | Takes an array of java directories |
+| `project.ext['src.java.dir']` | Takes an array of source directories |
 | `project.ext['module.iml.file']` | Takes a string with the path to the module's `.iml` file. |
 	
 	project.ext['src.java.dir'] = ['src/test']
