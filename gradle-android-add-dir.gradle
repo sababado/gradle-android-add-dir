@@ -1,6 +1,6 @@
 // Requires 'android' or 'android-library' plugin.
 task addTest {
-    def src = project.ext['src.test.java.dir']
+    def src = project.ext['src.java.dir']
     def file = file(project.ext['module.iml.file'])
 
     doLast {
