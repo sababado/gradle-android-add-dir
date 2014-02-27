@@ -1,17 +1,7 @@
-//buildscript {
-//    repositories {
-//        mavenCentral()
-//    }
-//    dependencies {
-//        classpath 'com.android.tools.build:gradle:0.8.+'
-//    }
-//}
-
-apply plugin: 'android'
-
+// Requires 'android' or 'android-library' plugin.
 task addTest {
-    def src = ['src/test/java']
-    def file = file("app.iml")
+    def src = project.ext['src.test.java.dir']
+    def file = file(project.ext['module.iml.file'])
 
     doLast {
         try {
