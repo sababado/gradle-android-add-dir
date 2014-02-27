@@ -3,6 +3,9 @@ task addTest {
     def src = project.ext['src.java.dir']
     def file = file(project.ext['module.iml.file'])
 
+	println "gradle-android-add-dir using src: $src"
+    println "gradle-android-add-dir using file: $file"
+	
     doLast {
         try {
             def parsedXml = (new XmlParser()).parse(file)
