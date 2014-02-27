@@ -19,4 +19,5 @@ Apply the script at the top of your build.gradle file. Make sure to define the t
 	// The rest of the build.gradle script
 	
 The script can alternatively be applied directly from it's location on Github.
+
 	apply from: 'https://raw.github.com/sababado/gradle-android-add-dir/master/gradle-android-add-dir.gradle'
