@@ -6,8 +6,8 @@ task addTest {
 	println "gradle-android-add-dir using src: $src"
     println "gradle-android-add-dir using file: $file"
 	
-    doLast {
-        try {
+    doLast{
+        if(file.exists()) {
             def parsedXml = (new XmlParser()).parse(file)
             def node = parsedXml.component[1].content[0]
             src.each {
@@ -20,8 +20,6 @@ task addTest {
                     file.text = writer.toString()
                 }
             }
-        } catch (FileNotFoundException e) {
-            // nop, iml not found
         }
     }
 }
