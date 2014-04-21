@@ -13,7 +13,7 @@ Apply the script at the top of your `build.gradle` file. Make sure to define the
 | `project.ext['src.java.dir']` | Takes an array of source directories |
 | `project.ext['module.iml.file']` | Takes a string with the path to the module's `.iml` file. |
 	
-    project.ext['src.java.dir'] = ['src/test']
+    project.ext['src.java.dir'] = ['src/test/java']
     project.ext['module.iml.file'] = "VaDroid3.iml"
     apply from: 'gradle-android-add-dir.gradle'
 	// The rest of the build.gradle script
